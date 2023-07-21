@@ -29,7 +29,7 @@ const DeleteBook = ({
 					<Button
 						type="primary"
 						size="large"
-						className="bg-[#F5F5F5]"
+						className="bg-[#7b7c7e]"
 						onClick={() => {
 							setShowDelete(false)
 						}}

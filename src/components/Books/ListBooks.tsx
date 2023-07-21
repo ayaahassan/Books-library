@@ -58,10 +58,7 @@ const ListBooks = ({ books }: TableProps) => {
 							>
 								<EditOutlined />
 							</NavLink>
-							{/* <NavLink
-								to={`/dashboard/books/delete/${record.id}`}
-								className={'text-[#0D4ADB]'}
-							> */}<div className={'text-[#0D4ADB]'}>
+							<div className={'text-[#0D4ADB]'}>
 							<DeleteOutlined
 									onClick={() => {
 									setShowDelete(true)
@@ -69,7 +66,6 @@ const ListBooks = ({ books }: TableProps) => {
 								}}
 							/>
 							</div>
-							{/* </NavLink> */}
 						</Space>
 					)}
 				/>

@@ -17,7 +17,6 @@ import dayjs from 'dayjs'
 import { RcFile, UploadChangeParam, UploadFile } from 'antd/es/upload'
 import { beforeUpload, getBase64 } from '../../config/helpers/imageUrl'
 import { BookFormProps } from '../../config/interfaces/Book/BookFormProps.interface'
-import UploadButton from '../UI/UploadButton'
 
 const BookForm = ({ onSubmit, book }: BookFormProps) => {
 	const navigate = useNavigate()
@@ -61,13 +60,9 @@ const BookForm = ({ onSubmit, book }: BookFormProps) => {
 				console.log({ url })
 				setImageUrl(url)
 				setValue('cover', url)
-
 			})
-			// setImageUrl(info.file.response.url)
-			//setValue('cover', info.file.response.url)
 		}
-		//setImageUrl(info.file.response.url)
-		console.log("tttt",info.file.response.url)
+		console.log('tttt', info.file.response.url)
 	}
 
 	return (
@@ -221,32 +216,7 @@ const BookForm = ({ onSubmit, book }: BookFormProps) => {
 							control={control}
 							render={({ field }) => {
 								return (
-									// <Upload
-									// 	listType="picture-card"
-									// 	className="avatar-uploader"
-									// 	showUploadList={false}
-									// 	//action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-									// 	beforeUpload={beforeUpload}
-									// 	onChange={handleChange}
-									// 	{...field}
-									// >
-									// 	{imageUrl ? (
-									// 		<img
-									// 			src={imageUrl}
-									// 			alt="avatar"
-									// 			style={{ width: '100%' }}
-									// 		/>
-									// 	) : (
-									// 		uploadButton
-									// 	)}
-									// </Upload>
-									<Form.Item
-										{...field}
-
-										// 	valuePropName="fileList"
-										// 	getValueFromEvent={normFile}
-										//
-									>
+									<Form.Item {...field}>
 										<Upload
 											name="cover"
 											listType="picture-card"
