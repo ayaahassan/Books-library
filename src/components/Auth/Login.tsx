@@ -33,7 +33,7 @@ const Login = () => {
 
 	return (
 		<div className="h-screen w-screen flex bg-[#EFF1FD] justify-center items-center p-16 ">
-			<div className="flex h-full w-full rounded-xl bg-[#fff] ">
+			<div className="flex h-full w-full rounded-xl bg-[#fff] overflow-hidden	 ">
 				<div className="w-3/5 p-12 flex flex-col gap-y-4	">
 					<h2 className="text-md font-bold w-2/3">
 						Please Enter your email address and password to access your account
